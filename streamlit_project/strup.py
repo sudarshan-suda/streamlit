@@ -6,7 +6,7 @@ import subprocess
 # Database connection
 def create_connection():
     return mysql.connector.connect(
-         host="localhost",
+       host="localhost",
        user="root",  # Replace with your MySQL username
        password="Sudarshan@SQL",  # Replace with your MySQL password
        database="user_management"
