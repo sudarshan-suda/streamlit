@@ -42,7 +42,7 @@ def login_user(email, password):
     query = "SELECT * FROM users WHERE email = %s AND password = %s"
     cursor.execute(query, (email, hash_password(password)))
     user = cursor.fetchone()
-    subprocess.run(["streamlit", "run", "E:\\streamlit_project\\cnvrted.py"])
+    subprocess.run(["streamlit", "run", "streamlit_project//cnvrted.py"])
     conn.close()
     return user
 
